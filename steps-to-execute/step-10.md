@@ -1,27 +1,45 @@
-TASK: Compare Candidate Models
+TASK: Compare Candidate Models And Promote Winner
 
 MODE: EXECUTION
 
-MODELS:
-- Random Forest
-- LightGBM
-- CatBoost
+IMPORTANT:
+
+competition_workbench.ipynb is the single source of truth.
+
+OBJECTIVE:
+
+Identify the strongest model using the current best feature set and make it the new default model if it outperforms the current one.
 
 INPUT:
-Best feature set so far.
+
+* competition_workbench.ipynb
+* experiments.csv
+
+MODELS:
+
+* RandomForest
+* LightGBM
+* CatBoost
+* XGBoost
 
 REQUIREMENTS:
-Same folds.
-Same seed.
+
+1. Use existing accepted features.
+2. Use identical folds and seed.
+3. Compare models fairly.
+
+IF A MODEL OUTPERFORMS CURRENT MODEL:
+
+* Replace model in competition_workbench.ipynb
+* Generate updated submission.csv
+* Update experiments.csv
 
 OUTPUT:
-model_comparison.md
 
-Rank by:
-- ROC-AUC
-- Stability
-- Training Time
+* model_comparison.md
+* updated competition_workbench.ipynb
 
-Select Top 2.
+SUCCESS CRITERIA:
+Workbench contains the best validated model.
 
-STOP AFTER REPORT.
+STOP AFTER REPORT AND IMPLEMENTATION.
