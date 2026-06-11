@@ -1,3 +1,4 @@
 experiment_id,timestamp,feature_set,preprocessing,model,cv_auc,public_score,notes
 EXP001,2026-06-11,Baseline,Mean Imputation + Label Encoding,RandomForest,0.813,0.80807,First submission
 EXP002,2026-06-11,Workbench,Mean Imputation + Label Encoding,RandomForest,0.8115,0.8056,Second submission
+EXP003,2026-06-11T23:40:31+0530,Workbench + School Count Encoding,Mean Imputation + Label Encoding + School Count Encoding,RandomForest,0.815328,81775,Applied approved School count encoding and regenerated submission.csv
