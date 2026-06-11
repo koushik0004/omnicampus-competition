@@ -1,3 +1,3 @@
 experiment_id,timestamp,feature_set,preprocessing,model,cv_auc,public_score,notes
 EXP001,2026-06-11,Baseline,Mean Imputation + Label Encoding,RandomForest,0.813,0.80807,First submission
-EXP002,2026-06-11,Baseline,Mean Imputation + Label Encoding,RandomForest,0.8115,0.8056,Second submission
+EXP002,2026-06-11,Workbench,Mean Imputation + Label Encoding,RandomForest,0.8115,0.8056,Second submission
